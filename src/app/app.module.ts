@@ -8,6 +8,7 @@ import { PetComponent } from './pet/pet.component';
 
 import { BASE_PATH } from './generated';
 import { environment } from '../environments/environment';
+import { HttpClientModule } from '@angular/common/http';
 
 export function apiConfigFactory (): Configuration {
   const params: ConfigurationParameters = {
@@ -25,6 +26,7 @@ export function apiConfigFactory (): Configuration {
     ApiModule.forRoot(apiConfigFactory),
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{ provide: BASE_PATH, useValue: environment.API_BASE_PATH }],
   bootstrap: [AppComponent]
