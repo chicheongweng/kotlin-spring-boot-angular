@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "generate-api": "npx @openapitools/openapi-generator-cli generate -i openapi.yaml -g typescript-angular -o ./src/app/generated"
+    "generate-api": "npx @openapitools/openapi-generator-cli generate -i api-spec/openapi.yaml -g typescript-angular -o ./src/app/generated"
   },
   "private": true,
   "dependencies": {
