@@ -14,6 +14,14 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
+## Swagger UI
+
+Navigate to `http://localhost:4200/assets/swagger-ui/index.html` to access swagger doc.
+
+## Generating Pet objects in the backend
+
+Navigate to `http://localhost:4200/get` to trigger Pet objects generated in the backend.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
