@@ -20,7 +20,7 @@ Navigate to `http://localhost:4200/assets/swagger-ui/index.html` to access swagg
 
 ## Generating Pet objects in the backend
 
-Navigate to `http://localhost:4200/get` to trigger Pet objects generated in the backend.
+Navigate to `http://localhost:4200/pet` to trigger Pet objects generated in the backend. If there are 404 errors due to CSP (Content Security Policy) violations, true clear the browser cache or use a browser a private mode.
 
 ## Running unit tests
 
