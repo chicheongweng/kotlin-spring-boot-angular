@@ -3,6 +3,7 @@ import { PetService } from '../generated/api/pet.service';
 import { Pet } from '../generated/model/pet';
 import { Tag } from '../generated';
 import { Category } from '../generated';
+import { v4 } from 'uuid';
 
 @Component({
   selector: 'app-pet',
@@ -61,6 +62,8 @@ export class PetComponent implements OnInit {
     return {
       //id: Math.floor(Math.random() * 1000), // Generate a random id
       name: `Pet-${Math.floor(Math.random() * 1000)}`, // Generate a random name
+      //generate a random UUID
+      uuid: v4(),
       category: this.generateRandomCategory(),
       photoUrls: Array.from({length: 3}, () => `https://example.com/photo-${Math.floor(Math.random() * 1000)}.jpg`),
       tags: Array.from({length: 5}, () => this.generateRandomTag()), // Generate an array of 5 random tags
